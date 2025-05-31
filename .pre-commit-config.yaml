@@ -15,10 +15,3 @@ repos:
     rev: v8.24.2
     hooks:
       - id: gitleaks
-  - repo: https://github.com/z3z1ma/dbt-osmosis
-    rev: v1.1.17
-    hooks:
-      - id: dbt-osmosis
-        files: ^models/
-        args: [--target=dev]
-        additional_dependencies: [dbt-duckdb]
