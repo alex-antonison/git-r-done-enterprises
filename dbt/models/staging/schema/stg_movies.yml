@@ -1,0 +1,44 @@
+version: 2
+models:
+  - name: stg_movies
+    columns:
+      - name: movie_id
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: Title
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: release_date
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: release_year
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: rating
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: votes
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: runtime
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: genres
+        description: ''
+        config:
+          meta: {}
+          tags: []

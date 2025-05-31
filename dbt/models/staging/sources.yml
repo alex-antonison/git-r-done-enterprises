@@ -1,0 +1,45 @@
+version: 2
+
+sources:
+  - name: imdb
+    database: imdb_movies
+    schema: public
+    tables:
+      - name: movies
+        description: IMDb movies dataset containing movie information
+        columns:
+          - name: movie_id
+            description: Unique identifier for the movie
+            config:
+              meta: {}
+              tags: []
+          - name: title
+            description: Title of the movie
+            config:
+              meta: {}
+              tags: []
+          - name: year
+            description: Release year of the movie
+            config:
+              meta: {}
+              tags: []
+          - name: rating
+            description: IMDb rating of the movie
+            config:
+              meta: {}
+              tags: []
+          - name: votes
+            description: Number of votes received
+            config:
+              meta: {}
+              tags: []
+          - name: runtime
+            description: Duration of the movie in minutes
+            config:
+              meta: {}
+              tags: []
+          - name: genres
+            description: List of genres the movie belongs to
+            config:
+              meta: {}
+              tags: []
