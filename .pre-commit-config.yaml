@@ -20,5 +20,5 @@ repos:
     hooks:
       - id: dbt-osmosis
         files: ^models/
-        args: [--target=prod]
+        args: [--target=dev]
         additional_dependencies: [dbt-duckdb]

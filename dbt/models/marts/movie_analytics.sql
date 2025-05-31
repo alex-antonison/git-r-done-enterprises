@@ -30,7 +30,8 @@ SELECT
     ROUND(
         avg_runtime,
         1
-    ) AS avg_runtime
+    ) AS avg_runtime,
+    1 as temp
 FROM
     movie_stats
 ORDER BY
