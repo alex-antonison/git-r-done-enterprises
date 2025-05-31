@@ -1,0 +1,29 @@
+version: 2
+models:
+  - name: movie_analytics
+    columns:
+      - name: release_year
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: total_movies
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: avg_rating
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: avg_votes
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: avg_runtime
+        description: ''
+        config:
+          meta: {}
+          tags: []
