@@ -1,2 +1,2 @@
 # Ignore the dev duckdb file
-dev/
+*.duckdb
