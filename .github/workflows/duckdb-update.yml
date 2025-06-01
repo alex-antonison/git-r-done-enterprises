@@ -46,7 +46,7 @@ jobs:
           git add -A
           git diff HEAD --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
 
-      - name: commit updated dbt documentation
+      - name: commit updated prod db to main
         if: steps.verify_diff.outputs.changed == 'true'
         run: |
           git config user.name github-actions
