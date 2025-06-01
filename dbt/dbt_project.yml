@@ -22,8 +22,6 @@ models:
   git_r_done_enterprises:
     +dbt-osmosis: "schema/{model}.yml"
     staging:
-      +materialized: view
-    marts:
       +materialized: table
 
 vars:

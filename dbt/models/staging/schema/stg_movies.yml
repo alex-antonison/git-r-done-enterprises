@@ -7,7 +7,27 @@ models:
         config:
           meta: {}
           tags: []
-      - name: Title
+      - name: title
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: us_gross
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: worldwide_gross
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: us_dvd_sales
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: production_budget
         description: ''
         config:
           meta: {}
@@ -22,22 +42,52 @@ models:
         config:
           meta: {}
           tags: []
-      - name: rating
+      - name: mpaa_rating
         description: ''
         config:
           meta: {}
           tags: []
-      - name: votes
+      - name: running_time_min
         description: ''
         config:
           meta: {}
           tags: []
-      - name: runtime
+      - name: distributor
         description: ''
         config:
           meta: {}
           tags: []
-      - name: genres
+      - name: source
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: major_genres
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: creative_type
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: director
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: rotten_tomatoes_rating
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: imdb_rating
+        description: ''
+        config:
+          meta: {}
+          tags: []
+      - name: imdb_votes
         description: ''
         config:
           meta: {}
