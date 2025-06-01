@@ -10,8 +10,7 @@ This project deploys a streamlit app at [https://git-r-done-enterprises.streamli
 2. Setup virtual environment with `python -m venv .venv`
 3. Install packages with `pip install -r requirements.txt`
 4. Load environment `source .venv/bin/activate`
-5. Install dbt deps `cd dbt && dbt deps`
-6. Setup `.streamlit/secrets.toml`
+5. Setup `.streamlit/secrets.toml`
    1. Copy the [.streamlit/secrets-example.toml](.streamlit/secrets-example.toml) and save it as `secrets.toml`
 
 ## Running locally
