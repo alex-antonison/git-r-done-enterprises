@@ -25,7 +25,7 @@ def get_connection():
     return duckdb.connect(db_path, read_only=True)
 
 
-# will query the datbaase once
+# will query the database once
 @st.cache_data
 def get_staging_movie_data():
     conn = get_connection()
