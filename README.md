@@ -10,8 +10,8 @@ This project deploys a streamlit app at [https://git-r-done-enterprises.streamli
 2. Install pre-commit `pip install pre-commit`
 3. Setup pre-commit `pre-commit install`
 4. Setup virtual environment with `python -m venv .venv`
-5. Install packages with `pip install -r requirements.txt`
-6. Load environment `source .venv/bin/activate`
+5. Load environment `source .venv/bin/activate`
+6. Install packages with `pip install -r requirements.txt`
 7. Setup `.streamlit/secrets.toml`
    1. Copy the [.streamlit/secrets-example.toml](.streamlit/secrets-example.toml) and save it as `secrets.toml`
 

@@ -26,7 +26,6 @@ models:
     marts:
       +materialized: table
 
-
 vars:
   imdb_movies:
     database: imdb_movies
