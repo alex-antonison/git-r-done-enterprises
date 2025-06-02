@@ -1,18 +1,19 @@
-select 
 
+with cte as (
+SELECT 
     release_year,
     director,
-    avg(rotten_tomatoes_rating),
+    AVG(rotten_tomatoes_rating) AS avg_rating
+FROM 
+    {{ ref('stg_movies') }}
+WHERE 
+    release_year = 2008
+GROUP BY 
+    release_year, director)
+
+select * from cte
+ORDER BY 
+    avg_rating DESC
+LIMIT 1
 
 
-* from {{ ref('stg_movies')}}
-
-
-    where release_year= 2008
-
-    group by 
-    release_year, director
-
-    order by avg(rotten_tomatoes_rating) desc,
-
-    limit 1
