@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: worlds_worst_director
+    columns:
+      - name: director
+        data_tests:
+          - not_null
+      - name: total_films_released
+      - name: total_net_profit
+        data_tests:
+          - not_null
+      - name: first_film_year
+      - name: last_film_year
+  - name: worst_directors_by_year
+    columns:
+      - name: director
+        data_tests:
+          - not_null
+      - name: release_year
+      - name: films_released
+      - name: net_profit

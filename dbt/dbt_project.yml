@@ -23,6 +23,9 @@ models:
     +dbt-osmosis: "schema/{model}.yml"
     staging:
       +materialized: table
+    marts:
+      +materialized: table
+
 
 vars:
   imdb_movies:
