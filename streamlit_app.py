@@ -65,7 +65,7 @@ filtered_df = duckdb.sql(
 
 # Top movies table
 st.subheader("Worlds Worst Directors")
-top_movies = filtered_df.nlargest(20, "total_net_profit")
+top_movies = filtered_df.nsmallest(20, "total_net_profit")
 st.dataframe(
     top_movies,
     use_container_width=True,
