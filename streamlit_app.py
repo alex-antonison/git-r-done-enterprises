@@ -32,7 +32,7 @@ def get_staging_movie_data():
     try:
         return conn.execute("""
             SELECT *
-            FROM stg_movies
+            FROM worlds_worst_director
         """).fetchdf()
     finally:
         conn.close()
@@ -51,22 +51,21 @@ year_range = st.sidebar.slider(
     value=(min_year, max_year),
 )
 
-min_rating = st.sidebar.slider(
-    "Minimum Rating", min_value=0.0, max_value=10.0, value=0.0, step=0.1
-)
+# min_rating = st.sidebar.slider(
+#     "Minimum Rating", min_value=0.0, max_value=10.0, value=0.0, step=0.1
+# )
 
 filtered_df = duckdb.sql(
     f"""
     select *
     from df
-    where imdb_rating >= {min_rating}
-    and release_year between {year_range[0]} and {year_range[1]}
+    where release_year between {year_range[0]} and {year_range[1]}
     """
 ).to_df()
 
 # Top movies table
-st.subheader("Top Rated Movies")
-top_movies = filtered_df.nlargest(20, "imdb_rating")
+st.subheader("Worlds Worst Directors")
+top_movies = filtered_df.nsmallest(20, "total_net_profit")
 st.dataframe(
     top_movies,
     use_container_width=True,
